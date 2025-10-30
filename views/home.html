@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div id="container">
     <header>
         <h1>Book Your Dream Vacation</h1>
     </header>
     <main>
-        <form id="vacation-form" action="submit-order" method="post">
+        <form id="vacation-form" action="submit-form" method="post">
             <fieldset class="destination">
                 <legend>Destination</legend>
                 <select id="destination" name="destination">
@@ -33,18 +34,18 @@
              </fieldset>
              <fieldset class="num-of-travelers">
                 <legend>Number of Travelers</legend>
-                <input type="number" id="num-of-travelers">
+                <input type="number" id="num-of-travelers" value="0">
                 <span id="err-num-of-travelers" class="error">Please enter number of travelers</span>
              </fieldset>
 
              <div class="submit-button">
-                <button type="submit" id="order-button">Find My Vacation</button>
+                <button type="submit" id="submit">Find My Vacation</button>
              </div>
         </form>
     </main>
     <footer>
-        <a href="">My GitHub Repository</a>
+        <p>GitHub Repository: https://github.com/Jake-G123/SDEV-305-Midterm-Exam</p>
     </footer>
-    
+    </div>
 </body>
 </html>

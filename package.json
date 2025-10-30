@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Jake-G123/SDEV-305-Midterm-Exam#readme",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
