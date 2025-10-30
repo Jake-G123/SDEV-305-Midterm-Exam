@@ -1,0 +1,50 @@
+html {
+    background-color: blue;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("../images/beach-view.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+form {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "destination           destination"
+    "departure-date   num-of-travelers"
+    "submit-button       submit-button";
+}
+fieldset {
+    border-style: none;
+}
+.destination {
+    grid-area: destination;
+}
+.departure-date {
+    grid-area: departure-date;
+}
+.num-of-travelers {
+    grid-area: num-of-travelers
+}
+.submit-button {
+    grid-area: submit-button;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+
+}

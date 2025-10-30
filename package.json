@@ -1,0 +1,25 @@
+{
+  "name": "sdev-305-midterm-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake-G123/SDEV-305-Midterm-Exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Jake-G123/SDEV-305-Midterm-Exam/issues"
+  },
+  "homepage": "https://github.com/Jake-G123/SDEV-305-Midterm-Exam#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
