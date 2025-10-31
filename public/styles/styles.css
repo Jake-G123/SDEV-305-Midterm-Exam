@@ -1,6 +1,5 @@
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-width: 500px;
 }
 
 html, body {
@@ -52,10 +51,10 @@ form {
     display: grid;
     margin: 25px;
     margin-bottom: 0px;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: (3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
     grid-template-areas: 
     "destination           destination"
     "departure-date   num-of-travelers"
@@ -82,6 +81,7 @@ fieldset {
     display: flex;
     flex-flow:row nowrap;
     justify-content: center;
+    align-items: center;
 }
 button {
     color: white;
@@ -96,11 +96,27 @@ footer {
     flex-flow: row nowrap;
     justify-content: center;
 }
+.error-container {
+    min-height: 20px;
+    position:absolute;
+}
 .error {
     color: red;
     display: none;
+
 }
-
-@media (max-width: 500px) {
-
+@media (max-width: 600px) {
+    html {
+        min-width: 250px;
+    }
+    form {
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "destination"
+    "departure-date"
+    "num-of-travelers"
+    "submit-button";
+}
 }

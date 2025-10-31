@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Booking</title>
-    <link rel="icon" href="images/pizza-icon.jpg"> <!-- change icon -->
+    <link rel="icon" href="images/Smiley.png">
     <script src="js/vacation.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -25,17 +25,23 @@
                     <option value="maldives">Maldives</option>
                     <option value="new-york-usa">New York City, USA</option>
                 </select>
-                <span id="err-destination" class="error">Please select a destination</span> 
+                <div class="error-container">
+                    <span id="err-destination" class="error">Please select a destination</span>
+                </div>
             </fieldset>
             <fieldset class="departure-date">
                 <legend>Departure Date</legend>
-                <input type="date" id="departure-date"> <!-- work on the date -->
-                <span id="err-date-input" class="error">Please enter departure date</span>
+                <input type="date" id="departure-date">
+                <div class="error-container">
+                    <span id="err-date-input" class="error">Please enter departure date</span>
+                </div>
              </fieldset>
              <fieldset class="num-of-travelers">
                 <legend>Number of Travelers</legend>
                 <input type="number" id="num-of-travelers" value="0">
-                <span id="err-num-of-travelers" class="error">Please enter number of travelers</span>
+                <div class="error-container">
+                    <span id="err-num-of-travelers" class="error">Please enter number of travelers</span>
+                </div>
              </fieldset>
 
              <div class="submit-button">
