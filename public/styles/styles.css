@@ -98,6 +98,7 @@ footer {
 }
 .error-container {
     min-height: 20px;
+    min-width: 250px;
     position:absolute;
 }
 .error {
@@ -106,7 +107,7 @@ footer {
 
 }
 @media (max-width: 600px) {
-    html {
+    body {
         min-width: 250px;
     }
     form {
